@@ -1,0 +1,90 @@
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  margin: 5rem 0;
+  .subscribeContainer {
+    width: 70vw;
+    max-width: 70vw;
+    margin: 4rem 0;
+    h3 {
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: 400;
+      font-size: 18px;
+      margin: 0.5rem 0;
+      word-spacing: -2px;
+    }
+
+    form {
+      text-align: center;
+      margin: 2rem 0;
+      input {
+        width: 23vw;
+        padding: 0.2rem 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-transform: capitalize;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        background: #000;
+        color: #fff;
+        padding: 0.2rem 2rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+//media query
+@media (max-width: 575.98px) {
+  .subscribe {
+    margin: 2rem 0;
+    .subscribeContainer {
+      margin: 1rem 0;
+      h3 {
+        font-size: 12px;
+      }
+
+      form {
+        input {
+          width: 40vw;
+          font-size: 14px;
+        }
+        button {
+          padding: 0.1rem 0.8rem;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .subscribe {
+    margin: 2rem 0;
+    .subscribeContainer {
+      margin: 1rem 0;
+      h3 {
+        font-size: 16px;
+      }
+
+      form {
+        input {
+          width: 36vw;
+          font-size: 15px;
+        }
+        button {
+          padding: 0.1rem 2rem;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}

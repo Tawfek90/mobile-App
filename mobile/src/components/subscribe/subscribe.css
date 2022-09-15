@@ -1,0 +1,93 @@
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f0f0f0;
+  margin: 5rem 0;
+}
+
+.subscribe .subscribeContainer {
+  width: 70vw;
+  max-width: 70vw;
+  margin: 4rem 0;
+}
+
+.subscribe .subscribeContainer h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0.5rem 0;
+  word-spacing: -2px;
+}
+
+.subscribe .subscribeContainer form {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.subscribe .subscribeContainer form input {
+  width: 23vw;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.subscribe .subscribeContainer form input:focus {
+  outline: none;
+}
+
+.subscribe .subscribeContainer form button {
+  background: #000;
+  color: #fff;
+  padding: 0.2rem 2rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 575.98px) {
+  .subscribe {
+    margin: 2rem 0;
+  }
+  .subscribe .subscribeContainer {
+    margin: 1rem 0;
+  }
+  .subscribe .subscribeContainer h3 {
+    font-size: 12px;
+  }
+  .subscribe .subscribeContainer form input {
+    width: 40vw;
+    font-size: 14px;
+  }
+  .subscribe .subscribeContainer form button {
+    padding: 0.1rem 0.8rem;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .subscribe {
+    margin: 2rem 0;
+  }
+  .subscribe .subscribeContainer {
+    margin: 1rem 0;
+  }
+  .subscribe .subscribeContainer h3 {
+    font-size: 16px;
+  }
+  .subscribe .subscribeContainer form input {
+    width: 36vw;
+    font-size: 15px;
+  }
+  .subscribe .subscribeContainer form button {
+    padding: 0.1rem 2rem;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=subscribe.css.map */

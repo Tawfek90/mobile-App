@@ -1,0 +1,88 @@
+.rightArrow {
+  position: absolute;
+  right: 17vw;
+  top: 28vh;
+  img {
+    width: 40px;
+    cursor: pointer;
+  }
+}
+.leftArrow {
+  position: absolute;
+  top: 28vh;
+  left: 17vw;
+  z-index: 5;
+  img {
+    width: 40px;
+    cursor: pointer;
+  }
+}
+.slick-dots {
+  width: 120px;
+  position: absolute;
+  left: 50vw;
+  top: 45vh;
+  height: 22px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 19px;
+}
+//media query
+@media (max-width: 575.98px) {
+  .rightArrow {
+    top: 8vh !important;
+    img {
+      width: 20px !important;
+    }
+  }
+  .leftArrow {
+    top: 8vh !important;
+    img {
+      width: 20px !important;
+    }
+  }
+  .slick-dots {
+    left: 41vw !important;
+    top: 14vh !important;
+    width: 105px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .rightArrow {
+    top: 13vh;
+    img {
+      width: 28px;
+    }
+  }
+  .leftArrow {
+    top: 13vh;
+    img {
+      width: 28px;
+    }
+  }
+  .slick-dots {
+    top: 21vh;
+    left: 40vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .rightArrow {
+    top: 13vh;
+    img {
+      width: 35px;
+    }
+  }
+  .leftArrow {
+    top: 13vh;
+    img {
+      width: 35px;
+    }
+  }
+  .slick-dots {
+    top: 21vh;
+    left: 40vw;
+  }
+}

@@ -1,0 +1,385 @@
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  .detailsContainer {
+    width: 80vw;
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    .imagesContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .p1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          margin-bottom: 2rem;
+        }
+      }
+      .p2 {
+        img {
+          width: auto;
+          height: 225px;
+          display: grid;
+          object-fit: contain;
+          margin-top: 7rem;
+        }
+      }
+    }
+    .information {
+      .apple {
+        .logo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 3rem 0 0;
+          p {
+            opacity: 0.7;
+          }
+          img {
+            cursor: pointer;
+          }
+        }
+        .appleInfo {
+          font-weight: 700;
+          text-transform: capitalize;
+          .name {
+            width: 52%;
+            font-weight: 600;
+          }
+          .stars {
+            margin-bottom: 1rem;
+            span {
+              font-size: 10px !important;
+              opacity: 0.5;
+              margin: 0 0.5rem;
+              text-transform: capitalize;
+            }
+          }
+          .price {
+            color: #0d4eb7;
+            font-size: 25px;
+            margin: 0;
+          }
+        }
+      }
+      .stock {
+        .type {
+          color: #36ba5c;
+        }
+        .numbers {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 19%;
+          .plus,
+          .minus {
+            width: 28px;
+            height: 28px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -5px;
+            p {
+              margin: 0;
+              font-size: 29px;
+              position: absolute;
+              top: -11px;
+              opacity: 0.7;
+            }
+          }
+          .one {
+            font-size: 23px;
+          }
+        }
+        .uncolored {
+          margin: 1rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 45%;
+          .full,
+          .installments {
+            width: 7rem;
+            height: 5rem;
+            border: 1px solid #ddd;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            border-radius: 10px;
+            opacity: 0.7;
+            text-transform: capitalize;
+          }
+          .installments {
+            opacity: 1;
+            font-weight: 500;
+          }
+        }
+        .colored {
+          display: flex;
+          align-items: center;
+          .imgcontainer {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            border-radius: 7px;
+            margin-right: 10px;
+            img {
+            }
+          }
+        }
+      }
+
+      .memory {
+        p {
+          text-transform: capitalize;
+          margin-top: 0.8rem;
+          font-weight: 600;
+        }
+        .memoryContainer {
+          display: flex;
+          margin: 1rem 0;
+
+          .size {
+            border: 1px solid #000;
+            width: 21%;
+            height: 75px;
+            border-radius: 7px;
+            margin-right: 10px;
+            display: grid;
+            justify-content: center;
+            opacity: 0.7;
+            p:nth-child(1) {
+              font-weight: bold;
+              text-transform: capitalize;
+              font-size: 15px;
+              position: relative;
+              top: 8px;
+            }
+            p:nth-child(2) {
+              font-size: 18px;
+              margin-top: -7px;
+            }
+          }
+
+          .active {
+            opacity: 1;
+          }
+        }
+      }
+
+      .color {
+        p {
+          text-transform: capitalize;
+          margin-top: 0.8rem;
+          font-weight: 600;
+        }
+        .colorContainer {
+          display: flex;
+          align-items: center;
+          .light,
+          .blue {
+            width: 6rem;
+            height: 4rem;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            font-size: 12px;
+            flex-direction: column;
+            position: relative;
+            border-radius: 7px;
+            margin-right: 12px;
+
+            p {
+              opacity: 0.7;
+              position: absolute;
+              top: -2px;
+            }
+            .lightCircle,
+            .blueCircle {
+              background: #ededed;
+              border: 1px solid #707070;
+              width: 25px;
+              height: 25px;
+              border-radius: 50%;
+              position: absolute;
+              top: 30px;
+            }
+          }
+          .blue {
+            border-color: #000;
+            font-weight: bold;
+            p {
+              opacity: 1;
+              font-size: 9px;
+            }
+            .blueCircle {
+              background: #90bad1;
+            }
+          }
+        }
+      }
+
+      .insurance {
+        p {
+          text-transform: capitalize;
+          margin-top: 0.8rem;
+          font-weight: 600;
+        }
+        .insuranceContainer {
+          display: flex;
+          align-items: center;
+          margin: 1rem 0;
+
+          .light,
+          .black {
+            width: 6rem;
+            height: 4rem;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            font-weight: 600;
+            margin-right: 13px;
+            p:nth-child(1) {
+              position: absolute;
+              top: 10px;
+              font-size: 15px;
+            }
+            p:nth-child(2) {
+              position: absolute;
+              top: 29px;
+            }
+          }
+        }
+      }
+      button {
+        width: 100%;
+      }
+
+      .free {
+        .shipping,
+        .day {
+          display: flex;
+          margin-bottom: 0.3rem;
+          align-items: center;
+          font-size: 10px;
+          opacity: 0.7;
+          img {
+            width: 1rem;
+          }
+          p {
+            margin: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//media query*********************************************
+@media (max-width: 575.98px) {
+  .details {
+    .detailsContainer {
+      grid-template-columns: 1fr;
+      width: 100vw;
+      max-width: 100vw;
+
+      .information {
+        .stock {
+          .colored {
+            .imgcontainer {
+              margin-right: 0;
+            }
+          }
+        }
+        .apple {
+          padding-left: 21px;
+        }
+        .stock {
+          padding-left: 20px;
+        }
+        .memory {
+          padding-left: 25px;
+        }
+        .color {
+          padding-left: 26px;
+        }
+        .insurance {
+          padding-left: 28px;
+        }
+        .free {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .details {
+    .detailsContainer {
+      grid-template-columns: 1fr;
+      width: 100vw;
+      max-width: 100vw;
+      .information {
+        .apple {
+          padding-left: 21px;
+        }
+        .stock {
+          padding-left: 20px;
+        }
+        .memory {
+          padding-left: 25px;
+        }
+        .color {
+          padding-left: 26px;
+        }
+        .insurance {
+          padding-left: 28px;
+        }
+        .free {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .details {
+    .detailsContainer {
+      grid-template-columns: 1fr;
+      width: 100vw;
+      max-width: 100vw;
+      .information {
+        .apple {
+          padding-left: 21px;
+        }
+        .stock {
+          padding-left: 20px;
+        }
+        .memory {
+          padding-left: 25px;
+        }
+        .color {
+          padding-left: 26px;
+        }
+        .insurance {
+          padding-left: 28px;
+        }
+        .free {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

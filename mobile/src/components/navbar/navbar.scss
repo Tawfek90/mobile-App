@@ -1,0 +1,160 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1c1c1c;
+  color: #fff;
+  .nav-container {
+    width: 90vw;
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .logo {
+      cursor: pointer;
+      position: relative;
+      top: 5px;
+      .logoIcon {
+        font-size: 42px;
+      }
+      p {
+        font-size: 10px;
+        width: 5vw;
+        text-transform: capitalize;
+      }
+    }
+
+    .navCategories {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      top: 6px;
+      .navCategoryItem {
+        margin: 0 0.5rem;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      .seperate {
+        width: 2px;
+        height: 2rem;
+        background: #fff;
+        opacity: 0.7;
+      }
+    }
+  }
+  .navIcons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .navIconItem {
+      margin: 0 0.5rem;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+  .bars {
+    display: none;
+  }
+}
+
+//media query
+
+@media (max-width: 991.98px) {
+  .nav {
+    .nav-container {
+      flex-direction: column;
+      position: relative;
+      .logo {
+        align-self: self-start;
+        position: relative;
+        top: 10px;
+        left: -37vw;
+      }
+
+      .navCategories {
+        flex-direction: column;
+        display: none;
+
+        .navCategoryItem {
+          margin: 0.7rem 0;
+          &:hover {
+            transform: scale3d(1, 1, 3);
+            transition: all 0.2s ease-in-out;
+          }
+        }
+        .seperate {
+          display: none;
+        }
+      }
+      .show-list {
+        display: block !important;
+      }
+    }
+    .navIcons {
+      display: none;
+    }
+    .bars {
+      display: block;
+      cursor: pointer;
+      font-size: 29px;
+      position: fixed;
+      top: 3%;
+      right: 5%;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .nav {
+    height: auto;
+    .nav-container {
+      height: auto;
+      .logo {
+        top: 4px;
+        left: -37vw;
+        .logoIcon {
+          font-size: 20px;
+          margin: 0.1rem 0.6rem;
+        }
+        p {
+          width: 18vw !important;
+          font-size: 9px;
+        }
+      }
+    }
+    .bars {
+      font-size: 18px;
+      top: 2%;
+    }
+  }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .nav {
+    height: auto;
+    .nav-container {
+      height: auto;
+      .logo {
+        top: 4px;
+        .logoIcon {
+          font-size: 34px;
+          margin: 0.1rem 0.6rem;
+        }
+        p {
+          width: 14vw;
+          font-size: 11px;
+        }
+      }
+    }
+    .bars {
+      font-size: 25px;
+      top: 2%;
+    }
+  }
+}

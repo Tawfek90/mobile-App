@@ -1,0 +1,100 @@
+.rightArrow {
+  position: absolute;
+  right: 17vw;
+  top: 28vh;
+}
+
+.rightArrow img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 28vh;
+  left: 17vw;
+  z-index: 5;
+}
+
+.leftArrow img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.slick-dots {
+  width: 120px;
+  position: absolute;
+  left: 50vw;
+  top: 45vh;
+  height: 22px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  border-radius: 19px;
+}
+
+@media (max-width: 575.98px) {
+  .rightArrow {
+    top: 8vh !important;
+  }
+  .rightArrow img {
+    width: 20px !important;
+  }
+  .leftArrow {
+    top: 8vh !important;
+  }
+  .leftArrow img {
+    width: 20px !important;
+  }
+  .slick-dots {
+    left: 41vw !important;
+    top: 14vh !important;
+    width: 105px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .rightArrow {
+    top: 13vh;
+  }
+  .rightArrow img {
+    width: 28px;
+  }
+  .leftArrow {
+    top: 13vh;
+  }
+  .leftArrow img {
+    width: 28px;
+  }
+  .slick-dots {
+    top: 21vh;
+    left: 40vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .rightArrow {
+    top: 13vh;
+  }
+  .rightArrow img {
+    width: 35px;
+  }
+  .leftArrow {
+    top: 13vh;
+  }
+  .leftArrow img {
+    width: 35px;
+  }
+  .slick-dots {
+    top: 21vh;
+    left: 40vw;
+  }
+}
+/*# sourceMappingURL=slider.css.map */
